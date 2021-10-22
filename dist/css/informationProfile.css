@@ -1,0 +1,242 @@
+.red-square {
+    width: 67%;
+    height: auto;
+    border: solid 2px tomato;
+    margin-top: 3.4%;
+    margin-left: 16%;
+}
+.red-square::before {
+    content: "-";
+    position: absolute;
+    left: 12%;
+    background: red;
+    color: red;
+    transform: skewY(-40deg);
+    width: 8%;
+    height: 6%;
+    opacity: 67%;
+}
+
+.red-square::after {
+    content: "-";
+    position: absolute;
+    left: 13%;
+    background: red;
+    color: red;
+    transform: skewY(40deg);
+    width: 8%;
+    height: 6%;
+    opacity: 67%;
+}
+
+.container-title::before {
+    content: "-";
+    position: absolute;
+    left: 79.1%;
+    background: red;
+    color: red;
+    transform: skewY(40deg);
+    width: 8%;
+    height: 6%;
+    opacity: 67%;
+}
+
+.container-title::after {
+    content: "-";
+    position: absolute;
+    left: 78%;
+    background: red;
+    color: red;
+    transform: skewY(-40deg);
+    width: 8%;
+    height: 6%;
+    opacity: 67%;
+}
+
+.container-title {
+    margin-top: 4%;
+    margin-left: 27%;
+    margin-bottom: 5%;
+}
+
+.container {
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.descriptions {
+    width: 60%;
+}
+
+.btn-alterar-1 {
+    margin-left: 50%;
+}
+
+.btn-alterar-2 {
+    margin-left: 51.5%;
+}
+
+.btn-alterar-3 {
+    margin-left: 41%;
+}
+
+.btn-alterar-4 {
+    margin-left: 50%;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    position: relative;
+    left: 45%;
+}
+
+@media (min-width: 280px) {
+    .btn-alterar-1 {
+        margin-left: 89%;
+    }
+    .btn-alterar-2 {
+        margin-left: 89%;
+    }
+    .btn-alterar-3 {
+        margin-left: 89%;
+    }
+
+    .btn-alterar-4 {
+        margin-left: 82%;
+    }
+}
+
+@media (min-width: 411px) {
+    .red-square::after {
+        bottom: 14%;
+    }
+    .container-title::before {
+        top: 7.9%;
+    }
+    .container-title::after {
+        bottom: 14%;
+    }
+}
+
+@media (min-width: 640px) {
+    .red-square::after {
+        bottom: 14%;
+    }
+    .container-title::before {
+        top: 7.9%;
+    }
+    .container-title::after {
+        bottom: 14%;
+    }
+}
+
+@media (min-height: 640px) {
+    .red-square::before {
+        height: 2%;
+    }
+    .red-square::after {
+        bottom: 72%;
+        height: 2%;
+    }
+    .container-title::before {
+        top: 2%;
+        height: 2%;
+    }
+    .container-title::after {
+        bottom: 72%;
+        height: 2%;
+    }
+}
+
+@media (min-width: 985px) {
+    .btn-alterar-1 {
+        margin-left: 89%;
+    }
+    .btn-alterar-2 {
+        margin-left: 89%;
+    }
+    .btn-alterar-3 {
+        margin-left: 89%;
+    }
+
+    .btn-alterar-4 {
+        margin-left: 82%;
+    }
+    .red-square::after {
+        bottom: 14%;
+    }
+    .container-title::before {
+        top: 7.9%;
+    }
+    .container-title::after {
+        bottom: 14%;
+    }
+}
+
+@media (min-width: 1172px) {
+    .btn-alterar-1 {
+        margin-left: 89%;
+    }
+    .btn-alterar-3 {
+        margin-left: 89%;
+    }
+
+    .btn-alterar-4 {
+        margin-left: 82%;
+    }
+    .red-square::after {
+        bottom: 14%;
+    }
+    .container-title::before {
+        top: 7.9%;
+    }
+    .container-title::after {
+        bottom: 14%;
+    }
+}
+
+@media (min-width: 1179px) {
+    .btn-alterar-3 {
+        margin-left: 89%;
+    }
+
+    .btn-alterar-4 {
+        margin-left: 82%;
+    }
+    .red-square::after {
+        bottom: 14%;
+    }
+    .container-title::before {
+        top: 7.9%;
+    }
+    .container-title::after {
+        bottom: 14%;
+    }
+}
+/** Apagar daqui para cima e tentar criar media queries de acordo com o tamanho da tela de cada dispositivo em espicífico*/
+@media (min-width: 1213px) {
+    .red-square::after {
+        bottom: 14%;
+    }
+    .container-title::before {
+        top: 7.9%;
+    }
+    .container-title::after {
+        bottom: 14%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .red-square::after {
+        bottom: 14%;
+    }
+    .container-title::before {
+        top: 7.9%;
+    }
+    .container-title::after {
+        bottom: 14%;
+    }
+}
