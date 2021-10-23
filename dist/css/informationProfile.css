@@ -1,10 +1,16 @@
-.red-square {
+.cobre-tudo {
     width: 67%;
     height: auto;
-    border: solid 2px tomato;
     margin-top: 3.4%;
     margin-left: 16%;
 }
+
+.red-square {
+    width: 100%;
+    height: auto;
+    border: solid 2px tomato;
+}
+
 .red-square::before {
     content: "-";
     position: absolute;
@@ -29,7 +35,7 @@
     opacity: 67%;
 }
 
-.container-title::before {
+.cobre-tudo::before {
     content: "-";
     position: absolute;
     left: 79.1%;
@@ -41,7 +47,7 @@
     opacity: 67%;
 }
 
-.container-title::after {
+.cobre-tudo::after {
     content: "-";
     position: absolute;
     left: 78%;
@@ -109,7 +115,7 @@
     }
 }
 
-@media (min-width: 411px) {
+/* @media (min-width: 411px) {
     .red-square::after {
         bottom: 14%;
     }
@@ -119,9 +125,9 @@
     .container-title::after {
         bottom: 14%;
     }
-}
+} */
 
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
     .red-square::after {
         bottom: 14%;
     }
@@ -131,9 +137,9 @@
     .container-title::after {
         bottom: 14%;
     }
-}
+} */
 
-@media (min-height: 640px) {
+/* @media (min-height: 640px) {
     .red-square::before {
         height: 2%;
     }
@@ -149,7 +155,7 @@
         bottom: 72%;
         height: 2%;
     }
-}
+} */
 
 @media (min-width: 985px) {
     .btn-alterar-1 {
@@ -165,7 +171,7 @@
     .btn-alterar-4 {
         margin-left: 82%;
     }
-    .red-square::after {
+    /* .red-square::after {
         bottom: 14%;
     }
     .container-title::before {
@@ -173,7 +179,7 @@
     }
     .container-title::after {
         bottom: 14%;
-    }
+    } */
 }
 
 @media (min-width: 1172px) {
@@ -187,7 +193,7 @@
     .btn-alterar-4 {
         margin-left: 82%;
     }
-    .red-square::after {
+    /* .red-square::after {
         bottom: 14%;
     }
     .container-title::before {
@@ -195,7 +201,7 @@
     }
     .container-title::after {
         bottom: 14%;
-    }
+    } */
 }
 
 @media (min-width: 1179px) {
@@ -206,7 +212,7 @@
     .btn-alterar-4 {
         margin-left: 82%;
     }
-    .red-square::after {
+    /* .red-square::after {
         bottom: 14%;
     }
     .container-title::before {
@@ -214,9 +220,21 @@
     }
     .container-title::after {
         bottom: 14%;
-    }
+    } */
 }
 /** Apagar daqui para cima e tentar criar media queries de acordo com o tamanho da tela de cada dispositivo em espicífico*/
+/* @media (min-width: 1192px) {
+    .red-square::after {
+        bottom: 80%;
+    }
+    .container-title::before {
+        top: 80%;
+    }
+    .container-title::after {
+        bottom: 80%;
+    }
+}
+
 @media (min-width: 1213px) {
     .red-square::after {
         bottom: 14%;
@@ -239,4 +257,4 @@
     .container-title::after {
         bottom: 14%;
     }
-}
+} */
