@@ -6,21 +6,21 @@
 
 body {
    
-    color: rgb(123, 102, 139);
+    color: rgb(93, 160 , 211);
     font-family: sans-serif;
-    background: url(../assets/img/images.jpg);
+    background-color: rgb(238, 236, 130);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     overflow-y: hidden;
     background-attachment: fixed;
-   
 }
 
 h1 {
     font-size: 1.4rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 2rem;
+    display: inline-block;
 
 }
 h2, h3 {
@@ -28,7 +28,17 @@ h2, h3 {
     margin: 1rem 0;
     font-size: 1.5rem;
 }
+.HOME
+{
+text-decoration: none;
+color: rgb(93, 160 , 211);
+font-size: 1.4rem;
+margin-left: 3.2rem;
+cursor: pointer;
+font-family: sans-serif;
+font-weight: bold;
 
+}
 h4 {
     text-align: center;
     margin-top: 3rem;
@@ -47,7 +57,7 @@ h4 {
 }
 
 .accordion-item {
-    background-color:  rgba(255, 255, 255, 0.452);
+    background-color:  rgba(255, 255, 255, 0.2);/* o ultimo é a opacidade*/
     color: rgb(5, 4, 4);
     margin: 1rem 0;
     border-radius: 0.8rem;

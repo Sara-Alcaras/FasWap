@@ -1,86 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link href="./css/informationProfile.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     </head>
     <body>
-        
-        <div class="w-100 deviceAccess">
-            <div class="cobre-tudo">
-                <div class="red-square">
-                    <h1 class="container-title">Informações do Perfil</h1>
+        <div class="cobre-tudo">
+            <div class="red-square">
+                <h1 class="container-title">Informações do Perfil</h1>
+                
+                <div class="container">
+
+                    <div class="descriptions">
+                        <span>Foto do perfil e descrição <span class="text-secondary btn-alterar-1 link">alterar</span></span>
+                        <hr size="3" />
+                    </div>
+
+                    <div class="descriptions">
+                        <span>Nome, e-mail e telefone <span class="text-secondary btn-alterar-2 link">alterar</span></span>
+                        <hr size="3" />
+                    </div>
                     
-                    <div class="container">
+                    <div class="descriptions">
+                        <span>Pinterest, Instagram e Facebook <span class="text-secondary btn-alterar-3 link">alterar</span></span>
+                        <hr size="3" />
+                    </div>
 
-                        <div class="descriptions bt-line">
-                            <div>Foto do perfil e descrição
-                                <label class="text-secondary btn-alterar-1 link dropdown-toggle" for="input-dropdown-photo">
-                                    alterar
-                                </label>
-
-                                <input type="checkbox" id="input-dropdown-photo" class="check-dropdown" />
-
-                                <ul class="alter-option alter-option-photo">
-                                    <li class="text-green text-borders-dropdown-separator-2">Adicionar Foto</li>
-                                    <li class="remove-photo text-red text-borders-dropdown-separator-2">Remover Foto</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="descriptions bt-line">
-                            <span>Nome, e-mail e telefone
-                                <label class="text-secondary btn-alterar-2 link dropdown-toggle" for="input-dropdown-contact-data">
-                                    alterar
-                                </label>
-
-                                <input type="checkbox" id="input-dropdown-contact-data" class="check-dropdown" />
-
-                                <ul class="alter-option alter-option-contact-data">
-                                    <li class="text-blue text-borders-dropdown-separator-2">Alterar nome e formas de contato</li>
-                                </ul>
-                            </span>
-                        </div>
-                        
-                        <div class="descriptions bt-line">
-                            <span>Pinterest, Instagram e Facebook
-                                <label class="text-secondary btn-alterar-3 link dropdown-toggle" for="input-social-media">
-                                    alterar
-                                </label>
-
-                                <input type="checkbox" id="input-social-media" class="check-dropdown"/>
-                                
-                                <ul class="alter-option alter-option-social-media">
-                                    <li class="text-blue text-borders-dropdown-separator-2">Alterar redes sociais</li>
-                                </ul>
-                            </span>
-                        </div>
-
-                        <div class="descriptions">
-                            <span>Desativar a sua conta <span class="text-white btn btn-danger btn-alterar-4">Desativar</span></span>
-                        </div>
-
+                    <div class="descriptions">
+                        <span>Desativar a sua conta <span class="text-white btn btn-danger btn-alterar-4">Desativar</span></span>
                     </div>
 
                 </div>
-            </div>
-            <button class="btn btn-danger btn-cancelar mt-3" type="button">Cancelar</button>
-        </div>
 
-        <div class="mt-5 w-100 center-align image-device">
-            <p class="experience-alert">Vire seu Smartphone na Horizontal</p>
-            <div class="deviceMobile-rotator">
-                <img src="./assets/img/seta-curva.png" class="invertido" title="https://www.flaticon.com/br/autores/smashicons" alt="Seta curva para a direita" />
-                
-                <i class="fz-phone fas fa-mobile-alt"></i>
-                
-                <img src="./assets/img/seta-curva.png" class="invertido-pra-baixo " title="https://www.flaticon.com/br/autores/smashicons" alt="Seta curva para a direita" />
             </div>
         </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.15.5/sweetalert2.all.min.js"></script>
-        <script src="./js/avisoMelhorExperiencia.js"></script>
-        <script src="./js/geradorModalConfirmar.js"></script>
+        <button class="btn btn-danger btn-cancelar mt-3" type="button">Cancelar</button>
     </body>
 </html>
