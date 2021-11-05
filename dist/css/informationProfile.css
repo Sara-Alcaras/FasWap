@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+
+.w-100 {
+    width: 100%;
+    height: auto;
+}
 
 .cobre-tudo {
     width: 67%;
@@ -9,15 +15,15 @@
 .red-square {
     width: 100%;
     height: auto;
-    border: solid 2px rgb(255, 89, 105);;
+    border: solid 2px tomato;
 }
 
 .red-square::before {
     content: "-";
     position: absolute;
     left: 12%;
-    background: rgb(255, 89, 105);;
-    color: rgb(255, 89, 105);;
+    background: red;
+    color: red;
     transform: skewY(-40deg);
     width: 8%;
     height: 6%;
@@ -28,8 +34,8 @@
     content: "-";
     position: absolute;
     left: 13%;
-    background: rgb(255, 89, 105);;
-    color: rgb(255, 89, 105);;
+    background: red;
+    color: red;
     transform: skewY(40deg);
     width: 8%;
     height: 6%;
@@ -40,8 +46,8 @@
     content: "-";
     position: absolute;
     left: 79.1%;
-    background: rgb(255, 89, 105);
-    color: rgb(255, 89, 105);;
+    background: red;
+    color: red;
     transform: skewY(40deg);
     width: 8%;
     height: 6%;
@@ -52,8 +58,8 @@
     content: "-";
     position: absolute;
     left: 78%;
-    background: rgb(255, 89, 105);;
-    color: rgb(255, 89, 105);;
+    background: red;
+    color: red;
     transform: skewY(-40deg);
     width: 8%;
     height: 6%;
@@ -73,34 +79,156 @@
 
 .descriptions {
     width: 60%;
-    
+}
+
+.bt-line {
+    border-bottom: solid 0.004em rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
 }
 
 .btn-alterar-1 {
-    margin-left: 50%;
+    margin-left: 89%;
 }
 
 .btn-alterar-2 {
-    margin-left: 51.5%;
+    margin-left: 89%;
 }
 
 .btn-alterar-3 {
-    margin-left: 41%;
+    margin-left: 89%;
 }
 
 .btn-alterar-4 {
-    margin-left: 50%;
-    background-color: rgb(255, 89, 105);
+    margin-left: 82%;
+}
+
+.check-dropdown {
+    display: none;
+}
+
+.alter-option {
+    position: absolute;
+    left: 59%;
+    width: 22%;
+    text-align: center;
+    align-items: center;
+    padding-right: 2%;
+    list-style: none;
+}
+
+.alter-option-photo {
+    display: none;
+}
+#input-dropdown-photo:checked ~ .alter-option-photo {
+    display: block;
+}
+
+.alter-option-contact-data {
+    display: none;
+}
+#input-dropdown-contact-data:checked ~ .alter-option-contact-data {
+    display: block;
+}
+
+.alter-option-social-media {
+    display: none;
+}
+#input-social-media:checked ~ .alter-option-social-media {
+    display: block;
 }
 
 .link {
     cursor: pointer;
 }
 
+.text-green {
+    cursor: pointer;
+    background-color: white;
+    border-top: solid 0.0001em rgba(0, 0, 0, 0.3);
+    border-left: solid 0.0001em rgba(0, 0, 0, 0.3);
+    border-right: solid 0.0001em rgba(0, 0, 0, 0.3);
+    border-radius: 4.4%;
+}
+.text-green:hover {
+    color: green;
+    background-color: greenyellow;
+}
+
+.text-red {
+    cursor: pointer;
+    background-color: white;
+    border-left: solid 0.0001em rgba(0, 0, 0, 0.3);
+    border-right: solid 0.0001em rgba(0, 0, 0, 0.3);
+    border-bottom: solid 0.0001em rgba(0, 0, 0, 0.3);
+    border-radius: 4.4%;
+}
+.text-red:hover {
+    color: darkred;
+    background-color: tomato;
+}
+
+.text-blue {
+    cursor: pointer;
+    background-color: white;
+    border: solid 0.0001em rgba(0, 0, 0, 0.3);
+    border-radius: 4.4%;
+}
+.text-blue:hover {
+    color: dodgerblue;
+    background-color: lightskyblue;
+}
+
+.text-borders-dropdown-separator-2 {
+    padding: 2%;
+}
+
 .btn-cancelar {
     position: relative;
     left: 45%;
-    background-color:rgb(255, 89, 105);
+}
+
+@keyframes rotator {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.deviceMobile-rotator {
+    animation: rotator 5s ease forwards infinite;
+    text-align: center;
+}
+
+.fz-phone {
+    padding-top: 2%;
+    font-size: 20em;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.desapear {
+    display: none;
+}
+
+.experience-alert {
+    font-family: sans-serif;
+    font-size: 3em;
+}
+
+.invertido {
+    transform: scaleX(-1);
+    margin-bottom: 34%;
+}
+
+.invertido-pra-baixo {
+    transform: scale(1, -1);
+}
+
+.center-align {
+    align-items: center;
+    text-align: center;
 }
 
 @media (min-width: 280px) {
@@ -118,147 +246,3 @@
         margin-left: 82%;
     }
 }
-
-/* @media (min-width: 411px) {
-    .red-square::after {
-        bottom: 14%;
-    }
-    .container-title::before {
-        top: 7.9%;
-    }
-    .container-title::after {
-        bottom: 14%;
-    }
-} */
-
-/* @media (min-width: 640px) {
-    .red-square::after {
-        bottom: 14%;
-    }
-    .container-title::before {
-        top: 7.9%;
-    }
-    .container-title::after {
-        bottom: 14%;
-    }
-} */
-
-/* @media (min-height: 640px) {
-    .red-square::before {
-        height: 2%;
-    }
-    .red-square::after {
-        bottom: 72%;
-        height: 2%;
-    }
-    .container-title::before {
-        top: 2%;
-        height: 2%;
-    }
-    .container-title::after {
-        bottom: 72%;
-        height: 2%;
-    }
-} */
-
-@media (min-width: 985px) {
-    .btn-alterar-1 {
-        margin-left: 89%;
-    }
-    .btn-alterar-2 {
-        margin-left: 89%;
-    }
-    .btn-alterar-3 {
-        margin-left: 89%;
-    }
-
-    .btn-alterar-4 {
-        margin-left: 82%;
-    }
-    /* .red-square::after {
-        bottom: 14%;
-    }
-    .container-title::before {
-        top: 7.9%;
-    }
-    .container-title::after {
-        bottom: 14%;
-    } */
-}
-
-@media (min-width: 1172px) {
-    .btn-alterar-1 {
-        margin-left: 89%;
-    }
-    .btn-alterar-3 {
-        margin-left: 89%;
-    }
-
-    .btn-alterar-4 {
-        margin-left: 82%;
-    }
-    /* .red-square::after {
-        bottom: 14%;
-    }
-    .container-title::before {
-        top: 7.9%;
-    }
-    .container-title::after {
-        bottom: 14%;
-    } */
-}
-
-@media (min-width: 1179px) {
-    .btn-alterar-3 {
-        margin-left: 89%;
-    }
-
-    .btn-alterar-4 {
-        margin-left: 82%;
-    }
-    /* .red-square::after {
-        bottom: 14%;
-    }
-    .container-title::before {
-        top: 7.9%;
-    }
-    .container-title::after {
-        bottom: 14%;
-    } */
-}
-/** Apagar daqui para cima e tentar criar media queries de acordo com o tamanho da tela de cada dispositivo em espicífico*/
-/* @media (min-width: 1192px) {
-    .red-square::after {
-        bottom: 80%;
-    }
-    .container-title::before {
-        top: 80%;
-    }
-    .container-title::after {
-        bottom: 80%;
-    }
-}
-
-@media (min-width: 1213px) {
-    .red-square::after {
-        bottom: 14%;
-    }
-    .container-title::before {
-        top: 7.9%;
-    }
-    .container-title::after {
-        bottom: 14%;
-    }
-}
-
-@media (min-width: 1280px) {
-    .red-square::after {
-        bottom: 14%;
-    }
-    .container-title::before {
-        top: 7.9%;
-    }
-    .container-title::after {
-        bottom: 14%;
-    }
-} */
