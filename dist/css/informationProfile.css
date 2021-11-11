@@ -15,15 +15,15 @@
 .red-square {
     width: 100%;
     height: auto;
-    border: solid 2px tomato;
+    border: solid 2px rgb(255, 89, 105);
 }
 
 .red-square::before {
     content: "-";
     position: absolute;
     left: 12%;
-    background: red;
-    color: red;
+    background: rgb(255, 89, 105);
+    color: rgb(255, 89, 105);
     transform: skewY(-40deg);
     width: 8%;
     height: 6%;
@@ -34,8 +34,8 @@
     content: "-";
     position: absolute;
     left: 13%;
-    background: red;
-    color: red;
+    background: rgb(255, 89, 105);
+    color: rgb(255, 89, 105);
     transform: skewY(40deg);
     width: 8%;
     height: 6%;
@@ -46,8 +46,8 @@
     content: "-";
     position: absolute;
     left: 79.1%;
-    background: red;
-    color: red;
+    background: rgb(255, 89, 105);
+    color: rgb(255, 89, 105);
     transform: skewY(40deg);
     width: 8%;
     height: 6%;
@@ -58,8 +58,8 @@
     content: "-";
     position: absolute;
     left: 78%;
-    background: red;
-    color: red;
+    background: rgb(255, 89, 105);
+    color: rgb(255, 89, 105);
     transform: skewY(-40deg);
     width: 8%;
     height: 6%;
@@ -100,6 +100,7 @@
 
 .btn-alterar-4 {
     margin-left: 82%;
+    background-color: rgb(255, 89, 105);
 }
 
 .check-dropdown {
@@ -164,7 +165,7 @@
 }
 .text-red:hover {
     color: darkred;
-    background-color: tomato;
+    background-color: rgb(255, 89, 105);
 }
 
 .text-blue {
@@ -185,6 +186,7 @@
 .btn-cancelar {
     position: relative;
     left: 45%;
+    background-color: rgb(255, 89, 105);
 }
 
 @keyframes rotator {

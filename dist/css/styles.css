@@ -4334,6 +4334,11 @@ fieldset:disabled .btn {
     align-items: center;
     justify-content: space-between;
 }
+
+.text-FasWap-title {
+    color: rgb(255, 89, 105);
+}
+
 .navbar-brand {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;

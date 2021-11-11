@@ -5,8 +5,7 @@
 }
 
 body {
-   
-    color: rgb(93, 160 , 211);
+    color: rgb(93, 160, 211);
     font-family: sans-serif;
     background-color: rgb(238, 236, 130);
     background-repeat: no-repeat;
@@ -21,48 +20,39 @@ h1 {
     margin-top: 2rem;
     margin-left: 2rem;
     display: inline-block;
-
 }
-h2, h3 {
+h2,
+h3 {
     text-align: center;
     margin: 1rem 0;
     font-size: 1.5rem;
 }
-.HOME
-{
-text-decoration: none;
-color: rgb(93, 160 , 211);
-font-size: 1.4rem;
-margin-left: 3.2rem;
-cursor: pointer;
-font-family: sans-serif;
-font-weight: bold;
-
+.HOME {
+    text-decoration: none;
+    color: rgb(93, 160, 211);
+    font-size: 1.4rem;
+    margin-left: 3.2rem;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 h4 {
     text-align: center;
     margin-top: 3rem;
     font-size: 1.2rem;
-   
-    
 }
-
 
 .accordion {
     width: 90%;
     max-width: 1000px;
     margin: 2rem auto;
-   
-   
 }
 
 .accordion-item {
-    background-color:  rgba(255, 255, 255, 0.2);/* o ultimo é a opacidade*/
+    background-color: rgba(255, 255, 255, 0.2); /* o ultimo é a opacidade*/
     color: rgb(5, 4, 4);
     margin: 1rem 0;
     border-radius: 0.8rem;
-  
-   
 }
 
 .accordion-item-header {
@@ -81,18 +71,17 @@ h4 {
     font-size: 2rem;
     position: absolute;
     right: 1rem;
-  /*  transition: transform 0.2s ease-in-out;*/
+    /*  transition: transform 0.2s ease-in-out;*/
 }
 
 .accordion-item-header.active::after {
     content: "\2212";
     /*transform: rotate(45deg);*/
 }
-.accordion-item-body{
+.accordion-item-body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    
 }
 .accordion-item-body-content {
     padding: 1rem;
@@ -104,7 +93,7 @@ h4 {
     max-height: 1000px;
 }*/
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     html {
         font-size: 14px;
     }
