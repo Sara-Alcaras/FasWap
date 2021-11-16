@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(238, 236, 130, 0.8);
+    display: grid;
+    color: #5DA0D3;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+}
+
+a {
+    font-size: clamp(1em, 1em + .5vw, 2.5em);
+    font-weight: bold;
+    color: #5DA0D3;
+    text-decoration: none;
+    margin-left: 2rem;  
+}
+
+.titulo {
+    font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.content {
+    height: 60vh;
+    width: 50vw;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+input {
+    display: none;
+}
+
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+  
+.bar {
+    width: 50px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+  
+.bar:hover {
+    background-color: #fff;
+}
+  
+.slides {
+    display: flex;
+    position: absolute;
+}
+  
+.slide {
+    width: 50%;
+    transition: .6s;
+    flex: none;
+}
+  
+#sl1:checked ~ .s1 {
+    margin-left: 0;
+}
+  
+#sl2:checked ~ .s1 {
+    margin-left: -100%;
+}
+
+#sl3:checked ~ .s1 {
+    margin-left: -200%;
+}
+  
+#sl4:checked ~ .s1 {
+    margin-left: -300%;
+}
+  
+#sl5:checked ~ .s1 {
+    margin-left: -400%;
+}
+  
+/*#sl6:checked ~ .s1 {
+    margin-left: -500%;
+}
+  
+#sl7:checked ~ .s1 {
+    margin-left: -600%;
+}
+  
+#sl8:checked ~ .s1 {
+    margin-left: -700%;
+}
+  
+#sl9:checked ~ .s1 {
+    margin-left: -800%;
+}
+  
+#sl10:checked ~ .s1 {
+    margin-left: -900%;
+}*/
