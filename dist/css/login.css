@@ -1,50 +1,73 @@
-@keyframes colors {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 50% 100%;
-    }
-
-    80% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 50% 0%;
-    }
-}
-
 body {
-    overflow-y: hidden;
     width: 100%;
     height: 100%;
+    background-color: rgb(238, 236, 130);
 }
-.bg-mobile {
-    background: linear-gradient(
-        180deg,
-        rgb(0, 1, 3) 19%,
-        rgb(51, 49, 56) 50%,
-        rgb(244, 153, 141) 92%,
-        rgb(0, 0, 0) 100%
-    );
-    background-size: 300% 300%;
-    animation: colors 12s ease infinite;
+
+a {
+    color: white;
 }
-.none {
-    display: none;
+
+a:hover {
+    color: rgba(0, 0, 0, 0.7);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc;
+}
+
+.btn-get_back {
+    font-size: 2.5em;
+    margin-top: 1%;
+    margin-left: 3rem;
+}
+
+.btn-get_back:hover {
+    cursor: pointer;
+    font-size: 2.9em;
+}
+
 input {
     height: 2.4rem;
+}
+
+.user {
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entrar {
+    width: 5em;
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .registration-element {
     position: absolute;
     width: 60%;
-    height: 90%;
+    height: auto;
     top: 5%;
     left: 20%;
+    padding-bottom: 2%;
     border: 1px solid white;
     border-radius: 10px;
     text-align: center;
@@ -55,74 +78,69 @@ input {
 }
 
 .sland {
-    background: rgb(255, 89, 105);
+    background: red;
     transform: skewY(5deg);
     width: 24%;
-    margin-left: 37%;
-    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 .title-registration {
     color: white;
-    font-size: 140%;
     font-weight: bolder;
     transform: skewY(-5deg);
     padding: 4% 0%;
 }
 .grid_form {
-    display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-rows: 1.7fr 1.6fr 1.3fr 1fr 0.9fr; 
-  gap: 15px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 6% 7%;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        "."
+        ".";
+    margin: 0% 4%;
 }
-.quadradinho
-{
-    width: 35%;
-    margin-left: 30%;
-    text-align: center;
-    align-items: center;
-}
-.text1
-{
-    margin-left: 56%;
-    margin-bottom: 8%;
-    color: white;
-    text-decoration: none;
-}
-.text2
-{
-    color: white;
-    text-decoration: none;
-}
-.text3
-{
-    color: white;
-    text-align: center;
-    margin-bottom: -7px;
+.grid_input {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "."
+        ".";
 }
 .ddd-number {
     padding-top: 12%;
     padding-bottom: 12%;
 }
-.div-background {
-    width: 100%;
-    height: 100%;
-}
-.img-small_mobile {
-    width: 100%;
-    height: 100%;
-    margin-top: 30%;
-}
-.img-big_pc {
-    width: 100%;
-    height: 100%;
-}
-.img-medium_mobile {
-    width: 100%;
-    height: 100%;
-}
 .bolder {
     font-weight: bolder;
+}
+
+.links {
+    width: 19%;
+    height: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em 0;
+    grid-template-areas:
+        "."
+        ".";
+}
+
+.btn-pinterest:hover {
+    color: black;
+}
+.btn-facebook:hover {
+    color: black;
 }
 .btn-instagram {
     background: linear-gradient(
@@ -134,112 +152,18 @@ input {
     border: none;
     color: white;
 }
-.entrar {
+.btn-kind_user {
     width: 20%;
-    margin-bottom: auto;
-    margin-left: 39%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0em 10%;
     grid-template-areas: ". .";
-    background: rgb(255, 89, 105);
-}
-.btn-social_media {
-    width: 50%;
-    margin-top: 3%;
-    margin-left: 25%;
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 1fr;
-    gap: 0em 11%;
-    grid-template-areas: " . .";
 }
 
-@media (max-width: 448px) {
-    body {
-        overflow-y: scroll;
-    }
-
-    /* .registration-element {
-        height: 115%;
-        top: 4%;
-    } */
-
-    .btn-social_media {
-        padding-bottom: 50%;
-    }
+@media (max-width: 716px) {
     .sland {
-        padding-right: 35%;
-        padding-left: 6%;
-        margin-left: 44%;
+        width: 40%;
     }
-
-    .img-medium_mobile {
-        display: none;
-    }
-
-    .grid_form {
-        grid-template-columns: 1.5fr;
-        grid-template-rows: 1fr 1.5fr 1fr 1fr;
-        gap: 0em 0px;
-        grid-template-areas:
-            "."
-            "."
-            "."
-            ".";
-    }
-
-    .grid_input {
-        grid-template-rows: 0.03fr 0.03fr 0.03fr 0.03fr 0.03fr 0.03fr 0.03fr 0.03fr;
-    }
-
-    .btn-kind_user {
-        margin: 1% 17% 0% 17%;
-    }
-
-    .btn-social_media {
-        margin: 1% 14% 0% 14%;
-        gap: 0% 22%;
-    }
-}
-
-@media (min-width: 449px) {
-    body {
-        overflow-y: scroll;
-    }
-    .bg-mobile {
-        background-color: none;
-    }
-    .img-small_mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 1365px) {
-    .img-big_pc {
-        display: none;
-    }
-}
-
-/** Aqui com o min width 1366 apagar as imagens de dispositivos menores*/
-@media (min-width: 1366px) {
-    body {
-        overflow-y: hidden;
-    }
-
-    .bg-mobile {
-        background-color: none;
-    }
-
-    .img-small_mobile {
-        display: none;
-    }
-
-    .img-medium_mobile {
-        display: none;
-    }
-}
-
-@media (min-width: 2000px) {
 }
